@@ -1,0 +1,554 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'verdana', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+header {
+    background-color:#0077b6 ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+font-family: "Lemon jelly", cursive; 
+}
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333; /* Blue background color */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px; /* Optional: Add border-radius for a rounded appearance */
+}
+
+/* Dropdown content links */
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white; /* White text color */
+}
+
+/* Hover effect on links */
+.dropdown-content a:hover {
+  background-color: #fff; /* Darker blue on hover */
+}
+
+/* Display dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+#hero {
+    background-color: #f0f0f0;
+    padding: 0rem;
+    text-align: center,top;
+}
+
+#hero h1 {
+    color: #333;
+    margin-bottom: 17rem;
+ font-size: 100px; /* Adjust the font size as needed */
+  font-weight: bold; /* Adjust the font weight as needed */
+  color: black; /* Adjust the text color as needed */
+ font-family: "wendy one", sans-serif; 
+}
+#secondary-section {
+            position: absolute;
+            top: 70%;
+            right: 0;
+            transform: translate(0%, -50%);
+                        color: black;
+font-size:35px;
+font-family: "Lemon jelly", cursive; 
+            padding: 7rem;
+            text-align: center;
+        }
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #00bcd4;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #00796b;
+}
+
+/* Featured Services Section */
+#featured-services {
+    background-color:#87B2CC;
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+.featured-service {
+    position: relative; /* Add this line */
+    margin-bottom: 30px;
+    border: 2px solid green;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.featured-service::before,
+.featured-service::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    z-index: -1;
+    background-color: rgba(0, 128, 128, 0.5); /* Adjust transparency here */
+    pointer-events: none; /* This line prevents the pseudo-elements from interfering with cursor events */
+}
+
+.featured-service::before {
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.featured-service::after {
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.featured-service:hover::before {
+    transform: scaleX(1);
+}
+
+.featured-service:hover::after {
+    transform: scaleX(1);
+}
+
+.featured-service:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.featured-service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+.heading h2 {
+    font-size: 1.5em;
+font-weight: bold;
+    color: #144361;
+    padding: 10px;
+font-family: 'Century Gothic', sans-serif;
+font-size: 40px; 
+
+}
+.featured-service h3 {
+    font-size: 1.5em;
+    color: Black;
+    padding: 15px;
+font-family: 'verdana', sans-serif;
+font-size: 25px; 
+
+}
+
+.featured-service p {
+    color: black;
+    padding: 0 15px 15px 15px;
+font-family: 'verdana', sans-serif;
+font-size: 18px; 
+
+}
+.featured-service li {
+    list-style-type: none; /* Remove default bullet */
+    font-family: 'impact', sans-serif;
+    font-size: 25px;
+    color: white; /* Change text color to white */
+}
+
+.featured-service li a {
+    color: white; /* Change link text color to white */
+    text-decoration: none; /* Remove default underline */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.featured-service li a:hover {
+    color: #007bff; /* Change link text color to blue on hover */
+    text-decoration: underline; /* Underline link text on hover */
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #6298BC;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial-box {
+    background-color: #C0CED1;
+    padding: 20px;
+    border: 3px solid #green;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures rounded corners apply properly */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.testimonial-box:hover {
+    transform: scale(1.05);
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial-box p {
+    color: C0CED1;
+    padding: 0 15px 15px 15px;
+font-family: 'verdana', sans-serif;
+font-size: 18px; 
+
+
+}
+
+.testimonial-box span {
+    font-weight: bold;
+    color: #333;
+font-family: 'verdana', sans-serif;
+font-size: 15px;
+}
+
+/* Blog Section */
+#blog {
+    padding: 3rem 0;
+    text-align: center;
+ background-color: #87B2CC;
+
+}
+
+.blog-post {
+    margin-bottom: 2rem;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.blog-post h3 {
+    margin-top: 1rem;
+    color: #333;
+font-family: 'verdana', sans-serif;
+font-size: 25px; 
+
+}
+.blog-post p {
+    margin-top: 1rem;
+    color: #333;
+font-family: 'verdana', sans-serif;
+font-size: 20px; 
+
+}
+
+/* Get Started Section */
+#get-started {
+    background-color: #00bcd4;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#get-started p {
+    margin-bottom: 2rem;
+}
+
+/* Social Media Section */
+#social-media {
+    background-color: #f0f0f0;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.social-media-links {
+    margin-top: 2rem;
+}
+
+.social-media-links a {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.social-media-links img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media-links img:hover {
+    transform: scale(1.2);
+}
+
+/* Newsletter Section */
+#newsletter {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #C6DEFF;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#newsletter input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+
+#newsletter button {
+    padding: 0.8rem 2rem;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#newsletter button:hover {
+    background-color: #00796b;
+}
+/* Contact Information Section */
+.contact-info {
+    background-color: #1F5271;
+    padding: 3rem;
+    text-align: center;
+    /* Text color to make it visible against the background */
+}
+.contact-info h2 {
+     font-size: 40px;
+font-weight: bold;
+  color: light day blue;
+    padding: 10px;
+font-family: 'Century Gothic', sans-serif;
+ 
+}
+
+
+
+.contact-info p {
+font-size: 25px;
+color: white;
+margin-bottom: 1rem; /* Adding space between paragraphs */
+}
+
+/* Add custom styles for additional sections as needed */
+/* Additional Sections (Add custom styles for each section as needed) */
+
+/* Footer Section */
+footer {
+    background-color: #ADDFFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    font-size: 20px;
+    color: #00796b;
+    margin: 0 10px;
+    text-decoration: none;
+ text-align: center;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    #hero {
+        padding: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-button {
+        margin: 10px 0;
+    }
+
+    /* Add responsive styles for other sections as needed */
+}
+
+/* Add any other global styles or resets here */
+/* Responsive Styles (Continued) */
+@media screen and (max-width: 768px) {
+    #featured-services, #testimonials, #blog, #get-started, #social-media, #newsletter, #contact-info {
+        padding: 2rem 0;
+    }
+
+    .featured-service,
+    .testimonial-box,
+    .blog-post {
+        margin-bottom: 1rem;
+    }
+
+    
+}
+
+/* Additional Custom Styles */
+#social-media {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#social-media h2 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+#newsletter {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+#newsletter h2 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+#contact-info {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#contact-info h2 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Update the social media icons size for better consistency */
+.social-media-links img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media-links img:hover {
+    transform: scale(1.2);
+}
+
+/* Update the newsletter button style */
+#newsletter button {
+    padding: 0.8rem 1.5rem;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#newsletter button:hover {
+    background-color: #00796b;
+}
+
+/* Update the contact information font size */
+#contact-info address {
+    font-size: 1.2rem;
+}
+/* Define the keyframes for the pentagon animation */
+@keyframes rotatePentagon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply styles to the logo container */
+.logo-container {
+    position: relative;
+}
+
+/* Apply styles to the logo */
+.logo {
+    width: 270px; /* Adjust the size as needed */
+    height: 270px; /* Adjust the size as needed */
+    animation: rotatePentagon 5s infinite linear; /* Adjust the duration and timing function as needed */
+    position: absolute;
+    top: 50%;
+    left: 40.5%;
+    transform: translate(-50%, -50%);
+}
+
+

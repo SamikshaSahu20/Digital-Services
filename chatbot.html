@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #chatbot-header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #chatbot-body {
+            display: none;
+            padding: 20px;
+            background-color: #fff;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        #chat-input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        #send-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="chatbot-container">
+        <div id="chatbot-header">Chat with Databeez</div>
+        <div id="chatbot-body">
+            <div id="chat-log"></div>
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // Add your chatbot logic here
+        function sendMessage() {
+            var userInput = document.getElementById('chat-input');
+            var message = userInput.value;
+
+            if (message.trim() !== '') {
+                appendMessage('User', message);
+                userInput.value = '';
+
+                // Simulate a response (replace this with actual backend processing)
+                setTimeout(function() {
+                    var response = 'Thanks for reaching out! How can I assist you today?';
+                    appendMessage('Databeez', response);
+                }, 500);
+            }
+        }
+
+        function appendMessage(sender, message) {
+            var chatLog = document.getElementById('chat-log');
+            var messageContainer = document.createElement('div');
+            messageContainer.innerHTML = `<strong>${sender}:</strong> ${message}`;
+            chatLog.appendChild(messageContainer);
+
+            // Scroll to the bottom of the chat log
+            chatLog.scrollTop = chatLog.scrollHeight;
+        }
+
+        // Toggle the chatbot body when clicking on the header
+        document.getElementById('chatbot-header').addEventListener('click', function() {
+            var chatbotBody = document.getElementById('chatbot-body');
+            chatbotBody.style.display = (chatbotBody.style.display === 'block') ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>

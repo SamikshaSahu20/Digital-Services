@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Consultation</title>
+    <!-- Add any necessary styles or scripts for the consultation page -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Add background image style -->
+    <style>
+        body {
+            background-image: url('your-background-image.jpg'); /* Add the path to your background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Set text color to white for better visibility on the background */
+        }
+#chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #chatbot-header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #chatbot-body {
+            display: none;
+            padding: 20px;
+            background-color: black;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        #chat-input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        #send-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+ <div id="chatbot-container">
+        <div id="chatbot-header">Chat with Databeez</div>
+        <div id="chatbot-body">
+            <div id="chat-log"></div>
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1>Free Consultation</h1>
+        <p>Welcome to our free consultation service. Our experts are here to assist you with your digital needs.</p>
+        
+        <h2>How It Works:</h2>
+        <ol>
+            <li>Click the "Get Started" button below to initiate the consultation process.</li>
+            <li>Fill out the consultation form with your details and project requirements.</li>
+            <li>Our team will review your information and reach out to schedule a free consultation session.</li>
+            <li>During the consultation, we'll discuss your goals and provide guidance on the best solutions for your needs.</li>
+        </ol>
+
+        <!-- Add a link to the advice page -->
+        <a href="advice.html" target="_blank" class="cta-button">Get Started</a>
+
+        <p>If you have any questions or need further assistance, feel free to <a href="/contact">contact us</a>.</p>
+
+        <!-- Add any additional content as needed -->
+        <section>
+            <h2>Why Choose Our Consultation Services?</h2>
+            <p>Our free consultation services provide you with:</p>
+            <ul>
+                <li>Expert advice from seasoned professionals in the digital industry.</li>
+                <li>Personalized guidance tailored to your unique project requirements.</li>
+                <li>A transparent discussion on potential solutions and strategies for your digital goals.</li>
+                <li>No-obligation insights to help you make informed decisions for your business.</li>
+            </ul>
+        </section>
+
+<section>
+        <h2>Our Expertise</h2>
+        <p>With years of experience in the digital landscape, our team of experts is well-equipped to provide guidance across various domains:</p>
+        <ul>
+            <li><strong>Web Design and Development:</strong> Crafting visually appealing and functional websites tailored to your brand.</li>
+            <li><strong>Search Engine Optimization (SEO):</strong> Optimizing your online presence to enhance visibility and attract organic traffic.</li>
+            <li><strong>Social Media Marketing:</strong> Strategically leveraging social platforms to engage and grow your audience.</li>
+            <li><strong>Email Marketing:</strong> Developing targeted email campaigns for effective audience communication.</li>
+            <li><strong>Pay-Per-Click (PPC) Advertising:</strong> Creating and managing campaigns to maximize online advertising impact.</li>
+            <li><strong>Analytics and Reporting:</strong> Utilizing data insights for informed decision-making and continuous improvement.</li>
+        </ul>
+        <p>During your consultation, we'll explore which aspects align best with your business goals.</p>
+    </section>
+
+    <!-- Frequently Asked Questions Section -->
+    <section>
+        <h2>Frequently Asked Questions</h2>
+        <p>Here are some common questions about our free consultation service:</p>
+        <ol>
+            <li><strong>Is the consultation really free?</strong><br> Yes, our consultation services are entirely free with no hidden charges.</li>
+            <li><strong>How long does a typical consultation last?</strong><br> Consultation sessions are typically 30-60 minutes, allowing for a thorough discussion.</li>
+            <li><strong>What happens after the consultation?</strong><br> Following the consultation, you'll receive a summary of discussed points and suggested strategies via email.</li>
+            <li><strong>Can I schedule a consultation for a specific service?</strong><br> Absolutely! We tailor our consultations to address your specific needs and preferences.</li>
+        </ol>
+        <p>If you have additional questions, feel free to reach out through our <a href="/contact">contact page</a>.</p>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section>
+        <h2>What Our Clients Say</h2>
+        <p>Read testimonials from clients who have benefited from our consultation services:</p>
+        <!-- Add client testimonials as needed -->
+        <div class="testimonial">
+            <blockquote>
+                <p>"The consultation helped us clarify our digital strategy. The team's insights were invaluable, and we've seen positive results since implementing their recommendations."</p>
+                <cite>- John Doe, CEO at XYZ Company</cite>
+            </blockquote>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </section>
+
+    </div>
+
+    <!-- Add any necessary styles or scripts for the consultation page -->
+    <style>
+        /* Add your custom styles here */
+         body {
+            background-image: url('https://professional.dce.harvard.edu/wp-content/uploads/sites/9/2021/11/building-consulting-business.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+        }
+
+        h1 {
+            color: #fff; /* White text color */
+        }
+
+        section {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent white background */
+            margin: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #fff; /* White text color */
+        }
+
+    </style>
+
+    <footer>
+        <p>&copy; 2023 Your Digital Services. All rights reserved. | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+    </footer>
+<script>
+        // Add your chatbot logic here
+        function sendMessage() {
+            var userInput = document.getElementById('chat-input');
+            var message = userInput.value;
+
+            if (message.trim() !== '') {
+                appendMessage('User', message);
+                userInput.value = '';
+
+                // Simulate a response (replace this with actual backend processing)
+                setTimeout(function() {
+                    var response = 'Thanks for reaching out! How can I assist you today?';
+                    appendMessage('Databeez', response);
+                }, 500);
+            }
+        }
+
+        function appendMessage(sender, message) {
+            var chatLog = document.getElementById('chat-log');
+            var messageContainer = document.createElement('div');
+            messageContainer.innerHTML = `<strong>${sender}:</strong> ${message}`;
+            chatLog.appendChild(messageContainer);
+
+            // Scroll to the bottom of the chat log
+            chatLog.scrollTop = chatLog.scrollHeight;
+        }
+
+        // Toggle the chatbot body when clicking on the header
+        document.getElementById('chatbot-header').addEventListener('click', function() {
+            var chatbotBody = document.getElementById('chatbot-body');
+            chatbotBody.style.display = (chatbotBody.style.display === 'block') ? 'none' : 'block';
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+*{
+margin:0;
+padding:0;
+font-family: sans-serif;
+}
+h1 {
+  font-size: 60px; /* Adjust the font size as needed */
+  font-weight: bold; /* Adjust the font weight as needed */
+  color: #fff; /* Adjust the text color as needed */
+ font-family: "Trebuchet MS", sans-serif; 
+}
+small{
+  font-size: 30px; /* Adjust the font size as needed */
+    color: #fff; /* Adjust the text color as needed */
+ font-family: "verdana", sans-serif; 
+}
+
+.hero{
+width:100%;
+height:100vh;
+background-image: url(https://media.istockphoto.com/id/1447210280/photo/abstract-concepts-of-cybersecurity-technology-and-digital-data-protection-protect-internet.webp?b=1&s=170667a&w=0&k=20&c=RvyJ1KNI1QHEJkgfdw3yZqnPrg__ZvQEgSiXqLmXmHM=);
+background-size: cover;
+background-position:center;
+position:relative;
+}
+
+.logo
+{
+width: 100px; /* Adjust the size as needed */
+cursor: pointer;
+position: absolute;
+top: 10px; /* Adjust the distance from the top */
+left: 20px; /* Adjust the distance from the left */
+}
+
+.navbar{
+width: 85%;
+height: 15%;
+margin: auto;
+display: flex;
+align-items: center;
+  justify-content: flex-end; /* Align items to the end (right) */
+  text-align: right;
+  position: relative; /* Set position to relative */}
+.navbar button {
+  color: #fbfcfd;
+  padding: 10px 25px;
+font-family: "Imapct", sans-serif; 
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px; /* Adjust the distance from the top */
+  right: 10px; /* Adjust the distance from the right */
+
+}
+.navbar button:hover {
+  background-color: #2E5984; 
+}
+.content button {
+  color: white;
+ font-weight: bold;
+  font-size: 30px; /* Adjust the font size as needed */
+  font-family: "Imapct", sans-serif; 
+  padding: 10px 60px;
+  background:transparent;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 200px; /* Adjust the distance from the top */
+  left: 8px; /* Adjust the distance from the left */
+}
+.content button:hover {
+  background-color: #2E5984; 
+}
+.content{
+color:#fbfcfd;
+position: absolute;
+top:50%;
+left:8%;
+transform: translateY(-50%);
+z-index:2;
+}
+h1.{
+font-size:80px;
+margin 10px 0 30px;
+line-height: 80px;
+}
+.side-bar {
+  width: 25px;
+  height: 100%;
+    background: linear-gradient(#6CA6CD, #007FFF); 
+  position: fixed; /* Change position to fixed to make it stick to the viewport */
+  right: 0;
+  top: 0;
+}
+.menu{
+display: block;
+width:50px;
+margin:px auto 0;
+cursor: pointer;
+ border-top: 2px solid #fff;; 
+}
+.social-links img, .useful-links img{
+width:20px;
+margin:5px auto;
+cursor:pointer;
+}
+.social-links{
+width:25px;
+text-align:center;
+position:absolute;
+top: calc(50% - 15px); transform: translateY(-50%);
+}
+.useful-links{
+width:25px;
+text-align:center;
+position:absolute;
+bottom:30px;
+}
+.bubble img{
+width:50px;
+animation: bubble 7s linear infinite;
+}
+.bubble{
+width:100%;
+display:flex;
+align-items:center;
+justify-content:space-around;
+position:absolute;
+bottom:0;
+}
+@keyframes bubble{
+0%{
+transform: translateY(0)
+opacity:0;}
+50%{
+opacity:1;}
+70%{
+opacity:1;}
+100%{
+transform: translateY(-80vh);
+opacity:0;}
+}
+.bubble img:nth-child(1){
+animation-delay:2s;
+width:130px;}
+.bubble img:nth-child(2){
+animation-delay:1s;
+width:35px;}
+.bubble img:nth-child(3){
+animation-delay:3.5 s;
+width:50px;}
+.bubble img:nth-child(4){
+animation-delay:4.5s;
+width:60px;}
+.bubble img:nth-child(5){
+animation-delay:1s;
+width:50px;}
+.bubble img:nth-child(6){
+animation-delay:2.5s;}
+.bubble img:nth-child(7){
+animation-delay:4s;
+width:100px;}
+.bubble img:nth-child(8){
+animation-delay:2.5s;}
+.bubble img:nth-child(9){
+animation-delay:0.1s;
+width:48px;}
+
+
+
